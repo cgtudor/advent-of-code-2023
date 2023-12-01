@@ -1,6 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3034c272_002D55f6_002D4d63_002Db717_002D99b978578f62/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ProcessOpenParathesisCorrectly" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::19374670-8ADE-4EDA-8E90-B80DE6E088BF::net7.0::NotQuiteLisp.DirectionsCalculatorTests.ProcessCombinationOfParenthesesCorrectly&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::19374670-8ADE-4EDA-8E90-B80DE6E088BF::net7.0::NotQuiteLisp.DirectionsCalculatorTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
