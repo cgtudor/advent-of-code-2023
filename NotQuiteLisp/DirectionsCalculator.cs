@@ -9,4 +9,32 @@ public static class DirectionsCalculator
 
         return positiveDirections - negativeDirections;
     }
+    
+    public static int GetFirstBasementPosition(string directions)
+    {
+        var floor = 0;
+        var position = 0;
+
+        foreach (var direction in directions)
+        {
+            position++;
+
+            switch (direction)
+            {
+                case '(':
+                    floor++;
+                    break;
+                case ')':
+                    floor--;
+                    break;
+            }
+
+            if (floor == -1)
+            {
+                return position;
+            }
+        }
+
+        return -1;
+    }
 }
