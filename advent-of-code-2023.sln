@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotQuiteLisp", "NotQuiteLisp\NotQuiteLisp.csproj", "{19374670-8ADE-4EDA-8E90-B80DE6E088BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trebuchet", "Trebuchet\Trebuchet.csproj", "{662657E0-320C-412E-8711-3E579A45CB8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{19374670-8ADE-4EDA-8E90-B80DE6E088BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19374670-8ADE-4EDA-8E90-B80DE6E088BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19374670-8ADE-4EDA-8E90-B80DE6E088BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{662657E0-320C-412E-8711-3E579A45CB8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{662657E0-320C-412E-8711-3E579A45CB8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{662657E0-320C-412E-8711-3E579A45CB8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{662657E0-320C-412E-8711-3E579A45CB8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
