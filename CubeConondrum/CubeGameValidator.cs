@@ -25,6 +25,23 @@ public class CubeGameValidator
         });
     }
 
+    public int SumPowerNeededForGames(string games)
+    {
+        var gamesList = games.Split(Environment.NewLine);
+        return gamesList.Sum(ExtractPower);
+    }
+
+    private int ExtractPower(string game)
+    {
+        var maxCounts = ExtractMaxColorCounts(game);
+        
+        var redPower = maxCounts["red"] == 0 ? 1 : maxCounts["red"];
+        var greenPower = maxCounts["green"] == 0 ? 1 : maxCounts["green"];
+        var bluePower = maxCounts["blue"] == 0 ? 1 : maxCounts["blue"];
+
+        return redPower * greenPower * bluePower;
+    }
+
     private bool IsValid(string game)
     {
         var maxCounts = ExtractMaxColorCounts(game);

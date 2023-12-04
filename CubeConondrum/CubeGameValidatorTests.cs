@@ -41,4 +41,12 @@ public class Tests
         CubeGameValidator validator = new(12, 13, 14);
         validator.SumIdOfValidGames(games).Should().Be(2683);
     }
+    
+    [Test]
+    public void CubeGameValidator_PowerSum_AdventTest()
+    {
+        var games = CubeConondrumInput.AdventInput;
+        CubeGameValidator validator = new(12, 13, 14);
+        validator.SumPowerNeededForGames(games).Should().Be(49710);
+    }
 }
