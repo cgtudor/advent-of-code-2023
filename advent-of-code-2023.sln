@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotQuiteLisp", "NotQuiteLis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trebuchet", "Trebuchet\Trebuchet.csproj", "{662657E0-320C-412E-8711-3E579A45CB8E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubeConondrum", "CubeConondrum\CubeConondrum.csproj", "{B37A22FB-6941-4125-8137-CDAB836F8289}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{662657E0-320C-412E-8711-3E579A45CB8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{662657E0-320C-412E-8711-3E579A45CB8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{662657E0-320C-412E-8711-3E579A45CB8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B37A22FB-6941-4125-8137-CDAB836F8289}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B37A22FB-6941-4125-8137-CDAB836F8289}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B37A22FB-6941-4125-8137-CDAB836F8289}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B37A22FB-6941-4125-8137-CDAB836F8289}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
