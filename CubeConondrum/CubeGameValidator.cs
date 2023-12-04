@@ -1,10 +1,12 @@
 using System.Text.RegularExpressions;
 
+namespace CubeConondrum;
+
 public class CubeGameValidator
 {
-    public int MaxRedCubes { get; init; }
-    public int MaxGreenCubes { get; init; }
-    public int MaxBlueCubes { get; init; }
+    private int MaxRedCubes { get; init; }
+    private int MaxGreenCubes { get; init; }
+    private int MaxBlueCubes { get; init; }
 
     public CubeGameValidator(int redCubes, int greenCubes, int blueCubes)
     {
@@ -27,30 +29,30 @@ public class CubeGameValidator
     {
         var maxCounts = ExtractMaxColorCounts(game);
         return maxCounts["red"] <= MaxRedCubes
-            && maxCounts["green"] <= MaxGreenCubes
-            && maxCounts["blue"] <= MaxBlueCubes;
+               && maxCounts["green"] <= MaxGreenCubes
+               && maxCounts["blue"] <= MaxBlueCubes;
     }
 
     private Dictionary<string, int> ExtractMaxColorCounts(string input)
-{
-    var colors = new[] { "red", "green", "blue" };
-    var maxCounts = new Dictionary<string, int> { { "red", 0 }, { "green", 0 }, { "blue", 0 } };
-
-    foreach (var color in colors)
     {
-        var regex = new Regex($@"(\d+)\s+{color}");
-        var matches = regex.Matches(input);
+        var colors = new[] { "red", "green", "blue" };
+        var maxCounts = new Dictionary<string, int> { { "red", 0 }, { "green", 0 }, { "blue", 0 } };
 
-        foreach (Match match in matches)
+        foreach (var color in colors)
         {
-            var count = int.Parse(match.Groups[1].Value);
-            if (count > maxCounts[color])
+            var regex = new Regex($@"(\d+)\s+{color}");
+            var matches = regex.Matches(input);
+
+            foreach (Match match in matches)
             {
-                maxCounts[color] = count;
+                var count = int.Parse(match.Groups[1].Value);
+                if (count > maxCounts[color])
+                {
+                    maxCounts[color] = count;
+                }
             }
         }
-    }
 
-    return maxCounts;
-}
+        return maxCounts;
+    }
 }
