@@ -21,7 +21,7 @@ public class EngineSchematicParserTests
         """;
         var sum = EngineSchematicParser.SumPartNumbers(simpleTest);
         sum.Should().Be(4361);
-    }
+    }//test
 
     [Test]
     public void EngineSchematicParser_SumPartNumbers_AdventTest()
